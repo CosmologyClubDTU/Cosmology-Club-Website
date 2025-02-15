@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Belleza&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -97,7 +98,7 @@ header {
   color: #fff;
 }
 
-.s4{
+.s4 {
   display: none;
 }
 
@@ -215,10 +216,12 @@ header {
     opacity: 0;
     transform: translateY(0);
   }
+
   10%,
   90% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
     transform: translateY(-100px);
@@ -229,6 +232,7 @@ header {
   25% {
     transform: rotateZ(15deg);
   }
+
   75% {
     transform: rotateZ(-15deg);
   }
@@ -247,10 +251,6 @@ header {
 
 .Mission {
   padding-top: 60px;
-}
-
-.Vision {
-  /* padding-top: 60px; */
 }
 
 .structure {
@@ -274,9 +274,9 @@ header {
   bottom: 1325px;
 }
 
-.system img{
-    width: 300px;
-    height: 300px;
+.system img {
+  width: 300px;
+  height: 300px;
 }
 
 .row1 {
@@ -321,20 +321,20 @@ header {
 
 /* About */
 
-.about{
-    background-color: #000;
-    color: white;
-    padding-top: 60px;
+.about {
+  background-color: #000;
+  color: white;
+  padding-top: 60px;
 }
 
 /* About Finish */
 
 /* Gallery */
 
-.gallery{
-    background-color: #000;
-    color: white;
-    padding-top: 60px;
+.gallery {
+  background-color: #000;
+  color: white;
+  padding-top: 60px;
 }
 
 /* Gallery Finish */
@@ -390,11 +390,11 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
-.vision-p{
-    padding: 0rem 1rem;
-    line-height: 2;
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
+.vision-p {
+  padding: 0rem 1rem;
+  line-height: 2;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 
 p span {
@@ -444,6 +444,7 @@ p span {
   from {
     transform: translate(0);
   }
+
   to {
     transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
   }
@@ -494,6 +495,7 @@ ul {
     opacity: 0;
     transform: translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -505,6 +507,7 @@ ul {
     opacity: 1;
     transform: translateY(0);
   }
+
   to {
     opacity: 0;
     transform: translateY(10px);
@@ -542,9 +545,11 @@ ul {
   0% {
     transform: translate(0);
   }
+
   5% {
     transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
   }
+
   100% {
     transform: perspective(1300px) rotateY(20deg) translateZ(215px) scale(0.5);
   }
@@ -559,15 +564,17 @@ ul {
   0% {
     transform: translate(0);
   }
+
   20% {
     transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
   }
+
   100% {
     transform: perspective(1300px) rotateY(20deg) translateZ(120px) scale(0.5);
   }
 }
 
-.container.active .main:hover + .shadow.one {
+.container.active .main:hover+.shadow.one {
   transform: perspective(1300px) rotateY(20deg) translateZ(230px) scale(0.5);
 }
 
@@ -581,21 +588,25 @@ ul {
   height: 100vh;
 }
 
-@media (max-width: 600px){
-  .moon{
-    left:0;
+@media (max-width: 600px) {
+  .moon {
+    left: 0;
     margin-top: 20%;
   }
-  .menu{
-    padding:0;
+
+  .menu {
+    padding: 0;
   }
-  .menu li a{
+
+  .menu li a {
     font-size: 19px !important;
   }
-  .hamburger-menu{
+
+  .hamburger-menu {
     padding-right: 10px;
   }
-  .scene{
+
+  .scene {
     background-image: url("images/bg_mobile.jpg");
     background-size: cover;
     background-position: center;
@@ -603,15 +614,62 @@ ul {
     height: 100vh;
     width: 100vw;
   }
-  .moonimg{
+
+  .moonimg {
     margin-right: 20px;
   }
-  .tagline{
-    left:20px;
+
+  .tagline {
+    left: 20px;
     margin-top: 50px;
+    width: 80%;
+    font-size: 1.8rem;
   }
-  .name{
-      font-size: 40px;
-      margin: auto;
-    }
+
+  .name {
+    font-size: 2.25rem;
+    margin: auto;
+  }
+
+  .row1 {
+    padding: 2rem 2rem;
+    text-align: left;
+  }
+
+  .row1 p {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .vision-p {
+    text-align: left;
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .H1 {
+    font-size: 2.5rem;
+  }
+
+  .image {
+    width: 4rem;
+  }
+
+  footer {
+    padding: 1rem 1rem;
+  }
+
+  .Icons i {
+    display: block;
+  }
+
+  .Icons a {
+    text-decoration: none;
+  }
+
+  .Icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
