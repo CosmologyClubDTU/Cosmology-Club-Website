@@ -19,7 +19,7 @@
 <body>
   <div class="navbar">
     <div class="menu">
-      <img class="image" src="images/logo.png" alt="" />
+      <a href="index.html"><img class="image" src="images/logo.png" alt="" /></a>
       <ul class="subnav s1" id="primary">
         <li><a href="#MAV">Mission & Vision</a></li>
       </ul>
@@ -159,137 +159,17 @@
             <center>
               <h1 class="H1">Gallery</h1>
             </center>
-            <section id="slider">
-              <input type="radio" name="slider" id="s1" />
-              <input type="radio" name="slider" id="s2" />
-              <input type="radio" name="slider" id="s3" checked />
-              <input type="radio" name="slider" id="s4" />
-              <input type="radio" name="slider" id="s5" />
-              <input type="radio" name="slider" id="s6" />
-
-              <label for="s1" id="slide1">
-                <div class="img-container">
-                  <div class="box">
-                    <img src="images/groupMembers.jpg" height="100%" width="100%" />
-                    <div class="content">
-                      <div class="wrap">
-                        <a href="events.html#skyGrazing" style="text-decoration: none; color:white">
-                          <h1>Night Sky Excursion</h1>
-                          <p>
-                            The club organized a night sky excursion to Sariska.
-                          </p>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </label>
-              <label for="s2" id="slide2">
-                <a>
-                  <div class="img-container">
-                    <div class="box">
-                      <img src="images/cosmicConclave.jpg" height="100%" width="100%" />
-
-                      <div class="content">
-
-                        <div class="wrap">
-                          <a href="events.html#past" style="text-decoration: none; color:white">
-                            <h1>Cosmic Conclave</h1>
-                            <p>
-                              A 2 day event that was organized by the club to gather space lovers on the same line, to
-                              do various activities for fun. And it also aimed to provide an open window for interaction
-                              with researchers in this field to do the exchange of thoughts with each other.
-                            </p>
-                          </a>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-              </label>
-              <label for="s3" id="slide3">
-                <div class="img-container">
-                  <div class="box">
-                    <img src="images/estrella.jpg" height="100%" width="100%" />
-                    <div class="content">
-                      <div class="wrap">
-                        <a href="achievements.html" style="text-decoration: none; color:white">
-                          <h1>ASTRAX 2021 IIT MANDI</h1>
-                          <ul>
-                            <li>
-                              <p>
-                                Sunistha Nangal secured First rank in Estrella, a blog writing competition of Astrax
-                                2021.
-                              </p>
-                            </li>
-                            <li>
-                              <p>
-                                Parth Singh was second runner up in Shootong Star, a photography competition of Astrax
-                                2021.
-                              </p>
-                            </li>
-                          </ul>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </label>
-              <label for="s4" id="slide4">
-                <div class="img-container">
-                  <div class="box">
-                    <img src="images/astraLens.jpg" height="100%" width="100%" />
-                    <div class="content">
-                      <div class="wrap">
-                        <a href="events.html#current" style="text-decoration: none; color:white">
-                          <h1>Astra Lens</h1>
-                          <p>
-                            A photography competition in which 200 students participated from 30 different colleges
-                            across country.
-                          </p>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </label>
-              <label for="s5" id="slide5">
-                <div class="img-container">
-                  <div class="box">
-                    <img src="images/moonbanner.jpg#moon" height="100%" width="100%" />
-                    <div class="content">
-                      <div class="wrap">
-                        <a href="archive.html" style="text-decoration: none; color:white">
-                          <h1>Archive</h1>
-                          <p>
-                            Take a look at our amazing clicks from our lens.
-                          </p>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </label>
-
-              <!-- <label for="s6" id="slide6">
-                <div class="img-container">
-                  <div class="box">
-                    <img src="images/groupMembers.jpg" height="100%" width="100%" />
-                    <div class="content">
-                      <div class="wrap">
-                        <a href="events.html#skyGrazing" style="text-decoration: none; color:white">
-                          <h1>Night Sky</h1>
-                          <p>
-                            The club organized a night sky excursion to Sariska.
-                          </p>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </label> -->
-
-            </section>
+            <div class="slider-container">
+              <div class="slider">
+                <img src="images/groupMembers.jpg" alt="Image 1">
+                <img src="images/estrella.jpg" alt="Image 2">
+                <img
+                  src="https://lh7-us.googleusercontent.com/docsz/AD_4nXfQJETjyIGs9yIKENRkjP9mhYELWx03Nbpj2tE6I4e9aJ2e9akVaKI81LvBTXEhrjWmykFIpVSChLEgowFKhhtotl3qeS3moFfxcXmYq0wnxUohOEA_prTGk7_Bestl0IVrq0mwwicQu10gCj8iFVyCmzeB?key=1lnbn8-Az2qyojsnZFp1DQ"
+                  alt="Image 3">
+              </div>
+              <button class="prev" onclick="prevSlide()">&#10094;</button>
+              <button class="next" onclick="nextSlide()">&#10095;</button>
+            </div>
           </div>
           <!-- Winners -->
 

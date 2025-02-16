@@ -335,6 +335,10 @@ header {
   background-color: #000;
   color: white;
   padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Gallery Finish */
@@ -588,6 +592,52 @@ ul {
   height: 100vh;
 }
 
+/*Gallery Changes*/
+.slider-container {
+  margin-top: 50px;
+  position: relative;
+  width: 60%;
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  width: 100%;
+  display: block;
+}
+
+.slider-container button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.slider-container button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 @media (max-width: 600px) {
   .moon {
     left: 0;
@@ -674,5 +724,28 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
+  }
+
+  .slider-container {
+    width: 100%;
+    /* Make it wider on smaller screens */
+    max-width: 90%;
+    height: auto;
+  }
+
+  .gallery .H1 {
+    padding-bottom: 40px;
+  }
+
+  .slider-container button {
+    font-size: 18px;
+    /* Make buttons smaller */
+    padding: 8px;
+  }
+
+  .slide img {
+    width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
   }
 }

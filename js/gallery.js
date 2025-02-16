@@ -1,54 +1,26 @@
-function moveToSelected(element) {
-  if (element == "next") {
-    var selected = $(".selected").next();
-  } else if (element == "prev") {
-    var selected = $(".selected").prev();
+let currentIndex = 0;
+
+function showSlide(index) {
+  const slider = document.querySelector('.slider');
+  const images = document.querySelectorAll('.slider img');
+  const totalSlides = images.length;
+
+  if (index >= totalSlides) {
+    currentIndex = 0;
+  } else if (index < 0) {
+    currentIndex = totalSlides - 1;
   } else {
-    var selected = element;
+    currentIndex = index;
   }
 
-  var next = $(selected).next();
-  var prev = $(selected).prev();
-  var prevSecond = $(prev).prev();
-  var nextSecond = $(next).next();
-
-  $(selected).removeClass().addClass("selected");
-
-  $(prev).removeClass().addClass("prev");
-  $(next).removeClass().addClass("next");
-
-  $(nextSecond).removeClass().addClass("nextRightSecond");
-  $(prevSecond).removeClass().addClass("prevLeftSecond");
-
-  $(nextSecond).nextAll().removeClass().addClass("hideRight");
-  $(prevSecond).prevAll().removeClass().addClass("hideLeft");
+  const translateValue = -currentIndex * 100 + '%';
+  slider.style.transform = 'translateX(' + translateValue + ')';
 }
 
-// Eventos teclado
-$(document).keydown(function (e) {
-  switch (e.which) {
-    case 37: // left
-      moveToSelected("prev");
-      break;
+function nextSlide() {
+  showSlide(currentIndex + 1);
+}
 
-    case 39: // right
-      moveToSelected("next");
-      break;
-
-    default:
-      return;
-  }
-  e.preventDefault();
-});
-
-$("#carousel div").click(function () {
-  moveToSelected($(this));
-});
-
-$("#prev").click(function () {
-  moveToSelected("prev");
-});
-
-$("#next").click(function () {
-  moveToSelected("next");
-});
+function prevSlide() {
+  showSlide(currentIndex - 1);
+}
