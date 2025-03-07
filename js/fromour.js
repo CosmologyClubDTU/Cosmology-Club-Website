@@ -42,7 +42,7 @@ Item.prototype = {
   items.push(new Item({
     el: item,
     svg: item.querySelector('svg'),
-    clip: document.querySelector('#clip-'+index+' circle'),
+    clip: document.querySelector('#clip-' + index + ' circle'),
   }));
 });
 
