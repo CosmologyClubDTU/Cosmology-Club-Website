@@ -680,4 +680,46 @@ ul {
     justify-content: space-around;
   }
 
+  /* HAMBURGER ICON MOBILE RESPONSIVE CODE STARTS */
+
+  .container.active .main {
+    transform: perspective(800px) rotateY(15deg) translateZ(80px) scale(0.4);
+    overflow: hidden;
+    /* Prevents content overlap */
+  }
+
+  .navbar.active .bar {
+    transform: rotate(180deg);
+  }
+
+  .navbar.active .subnav {
+    display: none;
+  }
+
+  .container.active .main .mainbody {
+    display: none;
+  }
+
+  @keyframes main-animation {
+    from {
+      transform: perspective(800px) rotateY(15deg) translateZ(80px) scale(0.4);
+    }
+
+    to {
+      transform: perspective(800px) rotateY(15deg) translateZ(80px) scale(0.4);
+    }
+  }
+
+  /* HAMBURGER ICON MOBILE RESPONSIVE CODE ENDS */
+  .shadow.one {
+    display: none;
+  }
+
+  .shadow.two {
+    display: none;
+  }
+
+  .container.active {
+    height: 100vh;
+  }
 }
