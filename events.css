@@ -661,7 +661,7 @@ ul {
     font-size: 2.5rem;
   }
 
-  /**/
+  /*FOOTER START*/
   footer {
     padding: 1rem 1rem;
   }
@@ -679,6 +679,8 @@ ul {
     align-items: center;
     justify-content: space-around;
   }
+
+  /*FOOTER END*/
 
   /* HAMBURGER ICON MOBILE RESPONSIVE CODE STARTS */
 

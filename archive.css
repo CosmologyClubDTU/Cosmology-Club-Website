@@ -579,4 +579,25 @@ ul {
   .container.active {
     height: 100vh;
   }
+
+  /*FOOTER START*/
+  footer {
+    padding: 1rem 1rem;
+  }
+
+  .Icons i {
+    display: block;
+  }
+
+  .Icons a {
+    text-decoration: none;
+  }
+
+  .Icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  /*FOOTER END*/
 }
