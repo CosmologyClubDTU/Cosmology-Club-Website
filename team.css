@@ -769,3 +769,129 @@ ul {
   background-color: #fff;
   height: 100vh;
 }
+
+@media (max-width:600px) {
+  .menu {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+
+  .subnav {
+    font-size: 1rem;
+  }
+
+  .menu {
+    padding: 0;
+  }
+
+  .faculty-structure {
+    flex-direction: column;
+  }
+
+  .planet1 {
+    display: none;
+  }
+
+  .system1 {
+    display: none;
+  }
+
+  header {
+    height: 1500px;
+  }
+
+  .scene {
+    height: inherit;
+  }
+
+  .faculty {
+    height: 1500px;
+  }
+
+
+  .F1 {
+    font-size: 3rem;
+    padding-top: 100px;
+  }
+
+  .H1 {
+    font-size: 3rem;
+  }
+
+  .image {
+    width: 4rem;
+  }
+
+  footer {
+    padding: 1rem 1rem;
+  }
+
+  .Icons i {
+    display: block;
+  }
+
+  .Icons a {
+    text-decoration: none;
+  }
+
+  .Icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .frow1 {
+    padding-right: 0;
+  }
+
+  .container-card {
+    flex-direction: column;
+  }
+
+  /* HAMBURGER ICON MOBILE RESPONSIVE CODE STARTS */
+
+  .container.active .main {
+    transform: perspective(800px) rotateY(15deg) translateZ(80px) scale(0.36);
+    overflow: hidden;
+    /* Prevents content overlap */
+    position: relative;
+    top: -250px;
+  }
+
+  .navbar.active .bar {
+    transform: rotate(180deg);
+  }
+
+  .navbar.active .subnav {
+    display: none;
+  }
+
+  .container.active .main .mainbody {
+    display: none;
+  }
+
+  @keyframes main-animation {
+    from {
+      transform: perspective(800px) rotateY(15deg) translateZ(80px) scale(0.4);
+    }
+
+    to {
+      transform: perspective(800px) rotateY(15deg) translateZ(80px) scale(0.4);
+    }
+  }
+
+  /* HAMBURGER ICON MOBILE RESPONSIVE CODE ENDS */
+  .shadow.one {
+    display: none;
+  }
+
+  .shadow.two {
+    display: none;
+  }
+
+  .container.active {
+    height: 100vh;
+  }
+
+}
